@@ -10,7 +10,16 @@ namespace SzuperhosProjekt
     {
         public static void Main(string[] args)
         {
-            
+            //Halasi-Czalbert Tibor
+            try
+            {
+                Kepregeny.Szereplok("szuperhos.txt");
+            }
+            catch (IOException)
+            {
+                throw new IOException("Rossz fájl nevet adott meg!");
+            }
+            Console.WriteLine(Kepregeny.Szuperhosok());
         }
     }
 }
