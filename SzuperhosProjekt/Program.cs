@@ -19,7 +19,7 @@ namespace SzuperhosProjekt
             {
                 throw new IOException("Rossz fájl nevet adott meg!");
             }
-            Console.WriteLine(Kepregeny.Szuperhosok());
+            Kepregeny.Szuperhosok();
         }
     }
 }

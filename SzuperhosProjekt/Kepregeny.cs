@@ -45,14 +45,12 @@ namespace SzuperhosProjekt
             sr.Close();
         }
 
-        public static string Szuperhosok()
+        public static void Szuperhosok()
         {
-            string kiiratas = "";
             foreach (var item in szuperhosok)
             {
-                kiiratas += item + "\n";
+                Console.WriteLine(item);
             }
-            return kiiratas;
         }
     }
 }
